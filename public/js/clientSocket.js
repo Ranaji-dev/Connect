@@ -1,6 +1,6 @@
 var connected = false;
 
-var socket = io("https://connect76.herokuapp.com")
+var socket = io("https://connect76.herokuapp.com/")
 socket.emit("setup", userLoggedIn);
 
 socket.on("connected", () => connected = true);
